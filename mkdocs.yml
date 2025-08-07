@@ -11,7 +11,7 @@ copyright: Copyright &copy; 2025-present <a href="https://github.com/Comet0322" 
 
 theme:
   name: material
-  language: zh-tw
+  language: zh-TW
   static_templates:
     - 404.html
   favicon: images/favicon.ico
