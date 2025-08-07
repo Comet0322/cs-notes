@@ -1,0 +1,79 @@
+site_name: CS Notes
+site_url: https://comet0322.github.io/cs-notes/
+site_author: Comet0322
+site_description: >-
+  CS Notes
+
+repo_name: cs-notes
+repo_url: https://github.com/Comet0322/cs-notes
+
+copyright: Copyright &copy; 2025-present <a href="https://github.com/Comet0322" target="_blank" rel="noopener noreferrer">Comet0322</a>
+
+theme:
+  name: material
+  language: zh-tw
+  static_templates:
+    - 404.html
+  favicon: images/favicon.ico
+  apple-touch-icon-precomposed: images/mobile_icon.png
+  include_search_page: false
+  search_index_only: true
+
+  features:
+    - header.autohide
+    - navigation.tracking
+    - navigation.top
+    - search.highlight
+    - search.share
+    - search.suggest
+    - content.code.annotate
+
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: light blue
+      accent: deep purple
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: cyan
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+
+  font:
+    text: Roboto Slab
+    code: Roboto Mono
+  icon:
+    repo: fontawesome/brands/github
+
+  custom_dir: overrides
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - footnotes
+
+
+  - search:
+      lang:
+        - zh-tw
+        - en
+  - git-revision-date:
+  - minify:
+      minify_html: true
+  - open-in-new-tab:
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Comet0322/cs-notes
+  analytics:
+    provider: google
+    property: G-KJB4RXSKZG
+
+nav:
+  - 前言: "index.md"
